@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCQ Quiz</title>
+</head>
+<body>
+    <h2>Hello {{ username }}, please answer the following questions:</h2>
+    <form action="/submit" method="post">
+        <input type="hidden" name="username" value="{{ username }}">
+
+        <h3>1. What is the capital of India?</h3>
+        <input type="radio" name="q1" value="Delhi" required> Delhi<br>
+        <input type="radio" name="q1" value="Mumbai"> Mumbai<br>
+        <input type="radio" name="q1" value="Kolkata"> Kolkata<br>
+
+        <h3>2. 2 + 2 equals?</h3>
+        <input type="radio" name="q2" value="3" required> 3<br>
+        <input type="radio" name="q2" value="4"> 4<br>
+        <input type="radio" name="q2" value="5"> 5<br>
+
+        <h3>3. Which is a programming language?</h3>
+        <input type="radio" name="q3" value="Python" required> Python<br>
+        <input type="radio" name="q3" value="Snake"> Snake<br>
+        <input type="radio" name="q3" value="Tiger"> Tiger<br>
+
+        <br>
+        <input type="submit" value="Submit Quiz">
+    </form>
+</body>
+</html>
